@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+</header>
+
+<style>
+.nav-pills {
+  margin-bottom:10%;
+  font-size:1.7em;
+  background-color:black;
+}
+
+.green-text {
+  text-color: green;
+}
+
+body {
+  background-color:white;
+  font-family: Lobster, ;
+  color:white;
+}
+
+h1 {
+  padding:0;
+  margin-top:0px;
+  font-size:5.0em;
+}
+
+.pageOne {
+  background: url("https://hd.unsplash.com/1/macbook-air-iphone-moleskin.jpg");
+  background-size:cover;
+  height:600px;
+}
+
+.pageTwo {
+  background:url("https://hd.unsplash.com/photo-1415889455891-23bbf19ee5c7");
+  background-size:cover;
+  height:600px;
+  padding-top:2%;
+  padding-left:3%;
+}
+
+.pageThree {
+  background:url("https://hd.unsplash.com/photo-1432888498266-38ffec3eaf0a");
+  background-size:cover;
+  height:600px;
+  padding-top:3%;
+  padding-left:2%;
+}
+
+a {
+  color:white;
+}
+
+.btn-default {
+  background-color:black;
+  border-color:black;
+  color:white;
+  font-size: 1.4em;
+}
+
+.block {
+  background-color:black;
+  opacity:0.9;
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius:10px;
+}
+
+.portfolio {
+  text-align:center;
+  color:white;
+}
+
+p {
+  font-size:1.7em;
+}
+
+.myImage {
+  border-radius:200px;
+}
+
+.projectImages {
+  padding-top:2%;
+  padding-left:2%;
+  margin-left:auto;
+  margein-right:auto;
+  height:200px;
+}
+</style>
+
+<div class="pageOne">
+  <ul class="nav nav-pills">
+    <li>
+      <a href="#">Thomas Prezioso Jr.</a>
+    </li>
+<!--
+    <li class="pull-right">
+      <a href="#bottom">Contact Me</a>
+    </li>
+-->
+    <li class="pull-right">
+      <a href="#middle" onclick="smoothScroll(document.getElementById('middle'))">Portfolio</a>
+    </li>
+      <li class="pull-right">
+        <a href="#top" onclick="smoothScroll(document.getElementById('top'))">About Me</a>
+    </li>
+</ul>
+
+  <div class="block text-center">
+  <h1>Thomas Prezioso Jr</h1>
+  <h3>while (alive) {<br>
+    eat;<br> sleep;<br> code;<br> repeat;<br>
+    };</h3>
+    </div>
+  <div class="btnList text-center">
+    <a class = "btn btn-default fa fa-twitter fa-2x" href="https://twitter.com/tomp1129">
+      Twitter
+    </a>
+    <a class = "btn btn-default fa fa-github fa-2x" href="https://github.com/Tprezioso">
+      Github
+    </a>
+    <a class = "btn btn-default fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/thomas-prezioso-jr-470311b0">
+      LinkedIn
+    </a>
+    <a class = "btn btn-default fa fa-wordpress fa-2x" href="https://tpj2218.wordpress.com/">
+      Blog
+    </a>
+  </div>
+</div>
+
+<div class="pageTwo" id="top" href="top">
+  <div class"row">
+    <div class="col-md-6 text-center">
+      <h1>About Me</h1>
+      <p>I am a self taught Front-End Web Developer and iOS Developer, with experience in product management. Competences:<br>HTML5, CSS3, Bootstrap3, Javascript, JQuery, Objective-C, Swift 3</p>
+  </div>
+    <div class="col-md-6">
+      <img src="data:image/jpeg;base64,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" class="myImage" alt="Thomas Prezioso">
+    </div>
+  </div>
+</div>
+<div class="pageThree" id="middle" href="middle">
+  <div class="block"><h1 class="portfolio">Portfolio</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    </div>
+    <div class="col-md-6">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    <img src="http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png" class="projectImages" alt"Project Images">
+    </div>
+  </div>
+</div>
+<script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+</html>
