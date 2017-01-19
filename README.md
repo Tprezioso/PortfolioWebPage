@@ -1,4 +1,4 @@
-This is my portfolio profile project that will showcase my web and iOS coding projects.
+This is a website portfolio profile project that will showcase my web and iOS coding projects.
 Used:
 ** HTML
 ** CSS
